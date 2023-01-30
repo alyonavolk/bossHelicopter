@@ -1,0 +1,17 @@
+{
+  "name": "bosshelicopter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "Alyona Volkova",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}

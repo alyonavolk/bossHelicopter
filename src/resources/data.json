@@ -1,0 +1,53 @@
+{
+    "home": {
+        "entranceFirst": {
+            "apartments": 20,
+            "apartmentsFive": 10,
+            "apartmentsTwo": 2,
+            "apartmentsThree": 8
+        },
+        "entranceSecond": {
+            "apartments": 20,
+            "apartmentsFive": 10,
+            "apartmentsTwo": 2,
+            "apartmentsThree": 8
+        },
+        "entranceThird": {
+            "apartments": 20,
+            "apartmentsFive": 10,
+            "apartmentsTwo": 2,
+            "apartmentsThree": 8
+        },
+        "entranceFourth": {
+            "apartments": 20,
+            "apartmentsFive": 10,
+            "apartmentsTwo": 2,
+            "apartmentsThree": 8
+        },
+        "entranceFifth": {
+            "apartments": 20,
+            "apartmentsFive": 10,
+            "apartmentsTwo": 2,
+            "apartmentsThree": 8
+        }
+    },
+    "worker": {
+        "plumber": {
+            "count": 3,
+            "salary": 21000
+        },
+        "builder": {
+            "count": 2,
+            "salary": 21000
+        },
+        "cleaner": {
+            "count": 3,
+            "salary": 22000
+        },
+        "elevatorOperator": {
+            "count": 1,
+            "salary": 20000
+        }
+    },
+    "addCost": 20000
+}
