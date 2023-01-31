@@ -1,13 +1,9 @@
 export interface ICountResidents {
-    countResidents: () => number,
-    printResidents: () => void
+    countResidents: () => number;
+    printResidents: () => string
 }
 
 export interface ISalaryEmployees {
-    calculationSalary: () => number
-}
-
-export interface IMaintenanceHouse {
-    addCost: number,
-    calculationCost: () => string
+    calculationSalary: () => number;
+    printSalary: () => string
 }

@@ -1,12 +1,13 @@
 import { ISalaryEmployees } from './interface.js';
 
 export class SalaryEmployees implements ISalaryEmployees {
+    private _data: object;
+    private sum: number = 0;
+
     constructor(data: object) {
         this._data = data;
 
     }
-    private _data: object;
-    private sum: number = 0;
 
     get data() {
         return this._data;
@@ -19,9 +20,17 @@ export class SalaryEmployees implements ISalaryEmployees {
         }
         return this.sum;
     }
+
+    public printSalary(): string {
+        return `Всего затраты на зарплату сотрудников составляют ${this.sum} руб.`;
+    }
 }
 
-export abstract class ChangeEmployees {
+export class ChangeEmployees extends SalaryEmployees {
+    constructor(data: object) {
+        super(data);
+    }
+
     // изменение зарплаты
     public static changeSalary(data: object, worker: string, salary: number): void {
         for (let [entrances, numberWorkers] of Object.entries(data)) {
@@ -29,6 +38,7 @@ export abstract class ChangeEmployees {
                 numberWorkers.salary = salary;
             }
         }
+        console.log(`Вы изменили зарплату ${worker} на ${salary} руб./мес.`);
     }
 
     // изменение количества персонала
@@ -38,5 +48,6 @@ export abstract class ChangeEmployees {
                 numberWorkers.count = count;
             }
         }
+        console.log(`Вы изменили штат сотрудников ${worker} на ${count} людей.`);
     }
 }

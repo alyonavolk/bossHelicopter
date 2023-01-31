@@ -1,11 +1,12 @@
 import { ICountResidents } from './interface.js';
 
 export class CountResidents implements ICountResidents{
+    private data: object;
+    private sum: number = 0;
+    
     constructor(data: object) {
         this.data = data;
     }
-    private data: object;
-    private sum: number = 0;
 
     // подсчет жильцов в доме
     public countResidents(): number {
@@ -17,7 +18,7 @@ export class CountResidents implements ICountResidents{
         return this.sum;
     }
 
-    public printResidents(): void {
-        console.log(`Всего в доме проживают ${this.sum} человек.`);
+    public printResidents(): string {
+        return `Всего в доме проживают ${this.sum} человек.`;
     }
 }
